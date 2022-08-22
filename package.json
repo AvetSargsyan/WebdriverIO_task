@@ -1,0 +1,18 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "EPAM second step's task",
+  "scripts": {
+    "test": "npx wdio run wdio.conf.js --parallel "
+  },
+  "keywords": [],
+  "author": "Avet Sargsyan",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/local-runner": "^7.23.0",
+    "@wdio/mocha-framework": "^7.23.0",
+    "@wdio/spec-reporter": "^7.23.0",
+    "chromedriver": "^104.0.0",
+    "wdio-chromedriver-service": "^7.3.2"
+  }
+}
