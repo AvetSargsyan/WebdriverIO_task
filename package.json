@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "EPAM second step's task",
   "scripts": {
-    "test": "npx wdio run wdio.conf.js --parallel "
+    "test": "npx wdio run wdio.conf.js"
   },
   "keywords": [],
   "author": "Avet Sargsyan",
