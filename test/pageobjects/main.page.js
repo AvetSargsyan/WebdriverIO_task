@@ -3,25 +3,25 @@ const Page = require("./page");
 
 class MainPage extends Page {
   get newPaste() {
-    return $("//*[@id='postform-text']");
+    return $("//textarea[@class='textarea -form js-paste-code']");
   }
   get syntaxHighlight() {
     return $("//span[@id='select2-postform-format-container']");
   }
   get bash() {
-    return $("//html/body/span[2]/span/span[2]/ul/li[2]/ul/li[1]");
+    return $("li=Bash");
   }
   get pasteExp() {
     return $("//span[@id='select2-postform-expiration-container']");
   }
   get tenMinutes() {
-    return $("//li[@class='select2-results__option'][2]");
+    return $("li=10 Minutes");
   }
   get pasteName() {
-    return $("//*[@id='postform-name']");
+    return $("//input[@id='postform-name']");
   }
   get button() {
-    return $("//button[@class='btn -big']");
+    return $("//button[@class='btn -big']"); //$("button=Create New Paste");
   }
   open() {
     return super.open(`https://pastebin.com/`);

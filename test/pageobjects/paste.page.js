@@ -3,18 +3,14 @@ const Page = require("./page");
 
 class PastePage extends Page {
   get newPasteData() {
-    return $("/html/body/div[1]/div[2]/div[1]/div[1]/div[4]/div[2]/ol/li[1]/div");
+    return $("//div[@class='de1']");
   }
   get syntaxHighlightData() {
-    return $("/html/body/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/a[1]");
+    return $("a=Bash");
   }
   get pasteExpData() {
-    return $("/html/body/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[2]/div[5]");
+    return $("div= 10 min ");
   }
-  get pasteNameData() {
-    return $("/html/body/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/h1");
-  }
-
 }
 
 module.exports = new PastePage();
