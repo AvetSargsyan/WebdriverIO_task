@@ -1,7 +1,7 @@
 "use strict";
 const Page = require("./page");
 
-class LoginPage extends Page {
+class MainPage extends Page {
   get newPaste() {
     return $("//*[@id='postform-text']");
   }
@@ -28,4 +28,4 @@ class LoginPage extends Page {
   }
 }
 
-module.exports = new LoginPage();
+module.exports = new MainPage();
