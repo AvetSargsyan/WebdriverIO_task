@@ -1,7 +1,6 @@
 "use strict";
 const MainPage = require("../pageobjects/main.page");
-const PastePage = require("../pageobjects/paste.page")
-const assert = require("assert");
+const PastePage = require("../pageobjects/paste.page");
 
 describe("'Bring It On' task", () => {
   afterEach(async () => {
