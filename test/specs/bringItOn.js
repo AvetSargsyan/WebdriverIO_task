@@ -3,7 +3,7 @@ const MainPage = require("../pageobjects/main.page");
 const PastePage = require("../pageobjects/paste.page");
 
 describe("'Bring It On' task", () => {
-  it("Shoult open page nad add value to New Paste: 'Hello from WebDriver'", async () => {
+  it("Shoult open page, add some values and select some options", async () => {
     await MainPage.open();
     await MainPage.check(
       "how to gain dominance among developers",
