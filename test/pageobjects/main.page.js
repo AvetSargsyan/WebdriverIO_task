@@ -21,10 +21,24 @@ class MainPage extends Page {
     return $("//input[@id='postform-name']");
   }
   get button() {
-    return $("//button[@class='btn -big']"); //$("button=Create New Paste");
+    return $("//button[@class='btn -big']");
   }
   open() {
     return super.open(`https://pastebin.com/`);
+  }
+  async check(name, code, syntax) {
+    await this.newPaste.addValue(code);
+    await this.pasteExp.isClickable();
+    await this.pasteExp.click();
+    await this.tenMinutes.isClickable();
+    await this.tenMinutes.click();
+    await this.pasteName.addValue(name);
+    if (syntax) {
+      await this.syntaxHighlight.isClickable();
+      await this.syntaxHighlight.click();
+      await this.bash.isClickable();
+      await this.bash.click();
+    }
   }
 }
 

@@ -3,13 +3,13 @@ const Page = require("./page");
 
 class PastePage extends Page {
   get newPasteData() {
-    return $("//div[@class='de1']");
+    return $("//textarea[@class='textarea -raw js-paste-raw']");
   }
   get syntaxHighlightData() {
-    return $("a=Bash");
+    return $("//div[@class='left']/a[@class='btn -small h_800']");
   }
   get pasteExpData() {
-    return $("div= 10 min ");
+    return $("//div[@class='expire']");
   }
 }
 
